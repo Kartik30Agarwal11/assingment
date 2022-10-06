@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Blog</title>
+   <!-- <style src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"></style>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+   <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            color: black;
+        }
+        .n:hover{
+            cursor: pointer;
+            background-color: black;
+            color: green;
+        }
+        #banner{
+            margin-top: -100px;
+            position:fixed;
+            height: 10%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        .image{
+            font-weight: bold;
+        }
+        #banner ul li{
+            color: white;
+            margin-left: 20px;
+            display: inline;
+            list-style: none;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+.Book{
+border: 2px solid green;
+color: green;
+background-color: black;
+padding: 5px;
+border-radius: 10px;
+}
+.Book:hover{
+    cursor: pointer;
+    background-color: green;
+    color:black;
+}
+#photo{
+    display: block;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 10px;
+    border: 2px solid pink;
+    background-color: pink;
+    border-radius: 5px;
+    justify-content: center;
+}
+#photo::first-line{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+        #body{
+            margin-top: 40px;
+            background-color: rgb(150, 170, 237);
+            border: 1px solid grey;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 90%;
+        }
+.container{
+    display: block;
+    margin: 10px 20px;
+    border: 2px solid white;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+}
+</style>
 </head>
-<body>
-    
+<body> 
+    <div id="banner">
+<ul>
+    <li class="n image">IMAGE</li> 
+    <li class="n">Home</li>
+    <li class="n">About</li>
+    <li class="n">Blog</li>
+    <li class="n">Plans</li>
+    <li class="n">Gallery</li>
+    <li class="n">Contact us</li>
+    <li><button class="Book">Book Trail</button></li>
+</ul>
+    </div>
+    <div id="photo">
+        Photographer's Blog
+        <br>
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+    <div id="body">
+<div class="container">
+<img src="./DSC_4325.JPG" alt="" height="200px" width="auto">
+</div>
+<div class="container">
+    <img src="./DSC_4326.JPG" alt="" height="200px" width="auto">
+</div>
+<div class="container">
+<img src="./DSC_4327.JPG" alt="" height="200px" width="auto">
+</div>
+</div>
 </body>
 </html>
